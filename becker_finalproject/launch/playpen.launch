@@ -1,0 +1,7 @@
+<launch>
+  <include file="$(find husky_gazebo)/launch/husky_playpen.launch" />
+  <include file="$(find husky_navigation)/launch/amcl_demo.launch" />
+  
+  <node pkg="becker_finalproject" name="movebase_client" type="control.py"></node>
+  <!-- <include file="$(find husky_navigation)/launch/move_base.launch" /> -->
+</launch>
